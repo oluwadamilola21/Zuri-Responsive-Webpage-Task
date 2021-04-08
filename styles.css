@@ -10,10 +10,14 @@
 
 div.nav-bar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1rem 6rem;
     width: 100vw;
     background: #304353;
+}
+.toggle {
+   display: none;
 }
 
 div.logo {
@@ -348,11 +352,26 @@ div.footer h6 {
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        max-width: 100%;
+    }
     div.navbar {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         padding: 0.5rem;
         width: 100vw;
+    }
+
+    .toggle {
+        align-self: flex-end;
+        display: initial;
+        cursor: pointer;
+        color: white;
+        
+    }
+    .toggleshow {
+        display: flex;
     }
 
     div.logo {
@@ -360,6 +379,7 @@ div.footer h6 {
     }
 
     ul.nav-links {
+        display: none;
         flex-direction: column;
     }
     ul li {
