@@ -361,17 +361,28 @@ div.footer h6 {
         justify-content: space-between;
         padding: 0.5rem;
         width: 100vw;
+        position: relative;
+    }
+    .display-none {
+        display: none;
+    }
+    .display-block {
+        display: block;
+    }
+    .absolute-and-visible-class {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        color: #304353;
     }
 
-    .toggle {
+     .toggle {
         align-self: flex-end;
         display: initial;
         cursor: pointer;
         color: white;
         
-    }
-    .toggleshow {
-        display: flex;
     }
 
     div.logo {
@@ -379,12 +390,11 @@ div.footer h6 {
     }
 
     ul.nav-links {
-        display: none;
         flex-direction: column;
     }
     ul li {
-        margin: 0;
-        font-size: 1rem;
+        margin: 0 1vw;
+        font-size: 0.8rem;
     }
 
     ul li a {
@@ -393,6 +403,9 @@ div.footer h6 {
 
     div.hero-content-heading h3 {
         font-size: 1rem;
+    }
+    div.hero-content-heading p {
+        font-size: 0.8rem;
     }
 
     div.hero-section {
@@ -415,8 +428,8 @@ div.footer h6 {
     }
 
     div.background p {
-        padding-left: 1rem;
-        font-size: 0.8rem;
+        padding-left: 0.5rem;
+        font-size: 0.7rem;
     }
     div.hero-background-pos {
         display: none;
